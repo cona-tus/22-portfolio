@@ -1,5 +1,5 @@
 @import "reset.css";
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,400;0,900;1,400&display=swap");
 
 /* global */
 :root {
@@ -232,5 +232,123 @@ body {
 
 .contact__img img {
   width: 100%;
+  height: auto;
+}
+
+/* works section */
+.works__section {
+  width: 100%;
+  height: 60vh;
+  padding: 80px 100px;
+}
+
+.works__title h1 {
+  -webkit-text-stroke: 1px var(--color-black);
+  color: transparent;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: var(--font-medium);
+  font-weight: var(--weight-extra-bold);
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+}
+
+.works__title h2 {
+  color: var(--color-black);
+  font-family: "Nunito Sans", sans-serif;
+  font-size: var(--font-medium);
+  font-weight: var(--weight-extra-bold);
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+  margin-bottom: 40px;
+}
+
+.works__header {
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr 1fr 2fr 0.5fr;
+}
+
+.works__items {
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr 1fr 2fr 0.5fr;
+}
+
+.works__item {
+  border-bottom: 1px solid var(--color-black);
+  padding: 10px;
+}
+
+.works__header .works__item {
+  color: var(--color-black);
+  font-family: "Nunito Sans", sans-serif;
+  font-size: var(--font-micro);
+  font-weight: var(--weight-light);
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+}
+
+.works__items .works__item {
+  color: var(--color-black);
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: var(--font-micro);
+  font-weight: var(--weight-light);
+  letter-spacing: 1px;
+}
+
+.works__item a > i {
+  font-size: var(--font-small);
+}
+
+/* store section */
+.store__section {
+  width: 100%;
+  height: 100vh;
+  background: url(img/store01.png) center / cover;
+}
+
+.store__items {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  padding: 80px 100px;
+}
+
+.store__text {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.store__title h1 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: var(--font-regular);
+  font-weight: var(--weight-medium);
+  letter-spacing: 1.4px;
+}
+
+.store__title h2 {
+  color: var(--color-black);
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: var(--font-small);
+  font-weight: var(--weight-regular);
+}
+
+.store__title span {
+  color: var(--color-black);
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: var(--font-micro);
+  font-weight: var(--weight-regular);
+}
+
+.store__item {
+  width: 100%;
+  height: 100%;
+}
+
+.store__item img {
+  width: 150px;
   height: auto;
 }
