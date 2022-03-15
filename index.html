@@ -131,13 +131,17 @@
                 <li class="works__item">HTML, CSS, Vanilla JS, Photoshop</li>
                 <li class="works__item">스트릿 패션 온라인 쇼핑몰</li>
                 <li class="works__item"><a href="https://cona-tus.github.io/fashion_shop1/" target="_blank"><i
-                            class="fa fa-eye"></i></a></li>
+                            class="fa fa-eye"></i></a><a href="https://github.com/cona-tus/fashion_shop1">
+                        <i class="fa fa-github"></i>
+                    </a></li>
                 <li class="works__item">2021</li>
                 <li class="works__item">1인 작업물</li>
                 <li class="works__item">HTML, CSS, Vanilla JS, Photoshop</li>
                 <li class="works__item">Chrome 클론 코딩</li>
                 <li class="works__item"><a href="https://cona-tus.github.io/js_chrome/" target="_blank"><i
-                            class="fa fa-eye"></i></a>
+                            class="fa fa-eye"></i></a><a href="https://github.com/cona-tus/js_chrome">
+                        <i class="fa fa-github"></i>
+                    </a>
                 </li>
             </ul>
         </section>
@@ -146,18 +150,31 @@
             <ul class="store__items">
                 <li class="store__text">
                     <div class="store__title">
-                        <h1>반응형 웹사이트 <span> - 스트릿 패션 온라인 스토어</span></h1>
+                        <h1>반응형 웹사이트
+                        </h1>
+                        <span>스트릿 패션 온라인 스토어 <a href="https://cona-tus.github.io/fashion_shop1/" target="_blank"><i
+                                    class="fa fa-eye"></i></a><a href="https://github.com/cona-tus/fashion_shop1">
+                                <i class="fa fa-github"></i>
+                            </a></span>
                     </div>
-                    <span>1인 작업물 (2022)</span>
                     <span>HTML, CSS, Vanilla JavaScript, Photoshop</span>
+                    <!-- <div class="store__icons">
+                        <i class="fab fa-html5"></i>
+                        <i class="fab fa-css3-alt"></i>
+                        <i class="fab fa-js"></i>
+                        <span class="photoshop">Ps</span>
+                    </div> -->
+
                 </li>
                 <ul class="store__wrapper">
-                    <li class="store__item">
+                    <!-- <li class="store__item">
                         <img src="img/logo.png">
-                    </li>
+                    </li> -->
+
                     <li class="store__item">
                         <h4>Design Concept</h4>
-                        <span>그리드를 사용한 심플하고 볼드한 연출</span>
+                        <span>그리드를 사용한 심플하고 볼드한 연출.<br>
+                            상품 마우스 오버 시 직관적인 아이콘 페이드.</span>
                     </li>
                     <li class="store__item">
                         <h4>Colors</h4>
@@ -176,9 +193,59 @@
                     </li>
                 </ul>
             </ul>
+            <div class="pointer__background">
+            </div>
+            <div class="pointer"></div>
+            <div class="pointer__text">
+                <div class="pointer__icon">
+                    JS
+                </div>
+                Main Page<br>
+                <br>
+                이미지가 2초마다 자동 슬라이드.<br>
+                좌우 버튼 클릭 시 슬라이드 전환.
+            </div>
+            <div class="pointer__background">
+            </div>
+            <div class="pointer"></div>
+            <div class="pointer__text">
+                <div class="pointer__icon">
+                    JS
+                </div>
+
+                Products Page<br>
+                <br>
+                카테고리에 필터 적용.<br>
+                목록 클릭 시 상품 선별 가능.
+            </div>
+            <div class="pointer__background">
+            </div>
+            <div class="pointer"></div>
+            <div class="pointer__text">
+                <div class="pointer__icon">
+                    JS
+                </div>
+                Cart Page<br>
+                <br>
+                상품 제거 시 총계 변화.<br>
+                결제 버튼 클릭 시 카트 초기화.
+            </div>
+        </section>
+        <section class="store__description__section">
+
         </section>
     </main>
     <script>
+        const pointerBtnArr = document.getElementsByClassName("pointer");
+        const pointerTextArr = document.getElementsByClassName("pointer__text");
+
+        for (let pointerBtn of pointerBtnArr) {
+            pointerBtn.onclick = function () {
+                let currentText = pointerBtn.nextElementSibling;
+                currentText.classList.toggle("active");
+            }
+        }
+
 
     </script>
 </body>
