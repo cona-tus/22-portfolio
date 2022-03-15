@@ -1,5 +1,5 @@
 @import "reset.css";
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,400;0,900;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 /* global */
 :root {
@@ -264,12 +264,12 @@ body {
 
 .works__header {
   display: grid;
-  grid-template-columns: 0.5fr 0.5fr 1fr 2fr 0.5fr;
+  grid-template-columns: 0.5fr 0.5fr 1.5fr 2fr 0.5fr;
 }
 
 .works__items {
   display: grid;
-  grid-template-columns: 0.5fr 0.5fr 1fr 2fr 0.5fr;
+  grid-template-columns: 0.5fr 0.5fr 1.5fr 2fr 0.5fr;
 }
 
 .works__item {
@@ -302,7 +302,7 @@ body {
 .store__section {
   width: 100%;
   height: 100vh;
-  background: url(img/store01.png) center / cover;
+  background: url(img/store01copy.png) center / cover;
 }
 
 .store__items {
@@ -310,14 +310,11 @@ body {
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-
+  justify-content: space-between;
   padding: 80px 100px;
 }
 
 .store__text {
-  width: 100%;
-  height: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -326,29 +323,99 @@ body {
   font-family: "Noto Sans KR", sans-serif;
   font-size: var(--font-regular);
   font-weight: var(--weight-medium);
-  letter-spacing: 1.4px;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
 }
 
-.store__title h2 {
+.store__title h1 > span {
   color: var(--color-black);
   font-family: "Noto Sans KR", sans-serif;
   font-size: var(--font-small);
   font-weight: var(--weight-regular);
 }
 
-.store__title span {
-  color: var(--color-black);
+.store__text > span {
+  color: var(--color-gray);
   font-family: "Noto Sans KR", sans-serif;
   font-size: var(--font-micro);
-  font-weight: var(--weight-regular);
+  font-weight: var(--weight-light);
+  letter-spacing: 0.5px;
+  margin-bottom: 5px;
 }
 
 .store__item {
-  width: 100%;
-  height: 100%;
+  margin-bottom: 40px;
 }
 
 .store__item img {
-  width: 150px;
+  width: 120px;
   height: auto;
+}
+
+.store__item h4 {
+  color: var(--color-black);
+  font-family: "Nunito Sans", sans-serif;
+  font-size: var(--font-small);
+  font-weight: var(--weight-regular);
+  margin-bottom: 10px;
+}
+
+.store__item:nth-child(2) span {
+  color: var(--color-gray);
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: var(--font-micro);
+  font-weight: var(--weight-light);
+  letter-spacing: 0.5px;
+}
+
+.store__colors {
+  display: flex;
+}
+
+.store__colors .store__color {
+  width: 15px;
+  height: 15px;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.store__color:nth-child(1) {
+  background-color: #050707;
+}
+
+.store__color:nth-child(2) {
+  background-color: #808080;
+}
+
+.store__color:nth-child(3) {
+  background-color: #d8dade;
+}
+
+.store__color:nth-child(4) {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-light-gray);
+}
+
+.store__item:nth-child(4) > span:nth-child(2) {
+  color: #050707;
+  font-family: "Roboto", sans-serif;
+  font-size: var(--font-small);
+  font-weight: var(--weight-medium);
+}
+
+.store__item:nth-child(4) > span:nth-child(3) {
+  color: #808080;
+  font-family: "Roboto", sans-serif;
+  font-size: var(--font-small);
+  font-weight: var(--weight-regular);
+  margin-left: 4px;
+}
+
+.store__item:nth-child(4) > span:nth-child(4) {
+  color: var(--color-light-gray);
+  font-family: "Roboto", sans-serif;
+  font-size: var(--font-small);
+  font-weight: #d8dade;
+  font-style: italic;
+  margin-left: 4px;
 }
