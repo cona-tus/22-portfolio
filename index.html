@@ -49,6 +49,9 @@
                             E-mail
                         </span>
                         <span class="profile__index">
+                            Github
+                        </span>
+                        <span class="profile__index">
                             학력
                         </span>
                     </div>
@@ -61,6 +64,9 @@
                         </span>
                         <span class="profile__description">
                             cona_tus@naver.com
+                        </span>
+                        <span class="profile__description">
+                            github.com/cona-tus
                         </span>
                         <span class="profile__description">
                             홍익대학교 예술학과 석사과정 수료
@@ -129,7 +135,7 @@
                 <li class="works__item">2022</li>
                 <li class="works__item">1인 작업물</li>
                 <li class="works__item">HTML, CSS, Vanilla JS, Photoshop</li>
-                <li class="works__item">스트릿 패션 온라인 쇼핑몰</li>
+                <li class="works__item" id="store__button">스트릿 패션 온라인 쇼핑몰</li>
                 <li class="works__item"><a href="https://cona-tus.github.io/fashion_shop1/" target="_blank"><i
                             class="fa fa-eye"></i></a><a href="https://github.com/cona-tus/fashion_shop1">
                         <i class="fa fa-github"></i>
@@ -137,7 +143,7 @@
                 <li class="works__item">2021</li>
                 <li class="works__item">1인 작업물</li>
                 <li class="works__item">HTML, CSS, Vanilla JS, Photoshop</li>
-                <li class="works__item">Chrome 클론 코딩</li>
+                <li class="works__item" id="chrome__button">Chrome 클론 코딩</li>
                 <li class="works__item"><a href="https://cona-tus.github.io/js_chrome/" target="_blank"><i
                             class="fa fa-eye"></i></a><a href="https://github.com/cona-tus/js_chrome">
                         <i class="fa fa-github"></i>
@@ -293,6 +299,20 @@
         </section>
     </footer>
     <script>
+        const storeButton = document.querySelector("#store__button");
+        const chromeButton = document.querySelector("#chrome__button");
+        const storeSection = document.querySelector(".store__section");
+        const chromeSection = document.querySelector(".chrome__section");
+
+        storeButton.addEventListener("click", () => {
+            storeSection.scrollIntoView({ behavior: "smooth", block: "center" });
+        });
+
+        chromeButton.addEventListener("click", () => {
+            chromeSection.scrollIntoView({ behavior: "smooth", block: "center" });
+        });
+
+
         // const pointerBtnArr = document.getElementsByClassName("pointer");
         // const pointerTextArr = document.getElementsByClassName("pointer__text");
 

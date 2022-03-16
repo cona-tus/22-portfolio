@@ -298,6 +298,17 @@ body {
   margin-right: 5px;
 }
 
+#store__button,
+#chrome__button {
+  cursor: pointer;
+  transition: color 0.2s ease-out;
+}
+
+#store__button:hover,
+#chrome__button:hover {
+  color: var(--color-light-gray);
+}
+
 /* store section */
 .store__section {
   width: 100%;
