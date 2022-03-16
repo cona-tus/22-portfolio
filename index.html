@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Portfolio | 2022</title>
+    <title>Conatus Portfolio</title>
     <script src="https://kit.fontawesome.com/5c9cf55bcf.js" crossorigin="anonymous"></script>
 </head>
 
@@ -14,10 +14,17 @@
     <header class="header">
         <aside class="sidebar">
             <ul class="sidebar__items">
-                <li class="sidebar__item"><span class="sidebar__title">Profile</span></li>
-                <li class="sidebar__item"><span class="sidebar__title">Contact</span></li>
-                <li class="sidebar__item">
+                <li class="sidebar__item" id="home__button">
+                    <span class="sidebar__title">Home</span>
+                   
+                </li>
+                <li class="sidebar__item" id="profile__button">
+                    <span class="sidebar__title">Profile</span>
+        
+                </li>
+                <li class="sidebar__item" id="works__button">
                     <span class="sidebar__title">Works</span>
+                   
                 </li>
             </ul>
     </header>
@@ -299,6 +306,7 @@
         </section>
     </footer>
     <script>
+        // scorll event
         const storeButton = document.querySelector("#store__button");
         const chromeButton = document.querySelector("#chrome__button");
         const storeSection = document.querySelector(".store__section");
@@ -312,17 +320,23 @@
             chromeSection.scrollIntoView({ behavior: "smooth", block: "center" });
         });
 
+const homeButton = document.querySelector("#home__button");
+const profileButton = document.querySelector("#profile__button");
+const worksButton = document.querySelector("#works__button");
+const homeSection = document.querySelector(".home__section");
+const profileSection = document.querySelector(".profile__section");
+const worksSection = document.querySelector(".works__section");
 
-        // const pointerBtnArr = document.getElementsByClassName("pointer");
-        // const pointerTextArr = document.getElementsByClassName("pointer__text");
+     homeButton.addEventListener("click", () => {
+            homeSection.scrollIntoView({ behavior: "smooth", block: "center" });
+        });
 
-        // for (let pointerBtn of pointerBtnArr) {
-        //     pointerBtn.onclick = function () {
-        //         let currentText = pointerBtn.nextElementSibling;
-        //         currentText.classList.toggle("active");
-        //     }
-        // }
-
+             profileButton.addEventListener("click", () => {
+            profileSection.scrollIntoView({ behavior: "smooth", block: "center" });
+        });
+             worksButton.addEventListener("click", () => {
+            worksSection.scrollIntoView({ behavior: "smooth", block: "center" });
+        });
 
     </script>
 </body>
