@@ -480,7 +480,7 @@ body {
 }
 
 .copyright__section span {
-  color: var(--color-black);
+  color: var(--color-gray);
   font-family: "Nunito Sans", sans-serif;
   font-size: var(--font-micro);
   font-weight: var(--weight-light);
