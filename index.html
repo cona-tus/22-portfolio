@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
     <meta charset="UTF-8" />
@@ -16,15 +16,13 @@
             <ul class="sidebar__items">
                 <li class="sidebar__item" id="home__button">
                     <span class="sidebar__title">Home</span>
-                   
                 </li>
                 <li class="sidebar__item" id="profile__button">
                     <span class="sidebar__title">Profile</span>
-        
                 </li>
                 <li class="sidebar__item" id="works__button">
                     <span class="sidebar__title">Works</span>
-                   
+
                 </li>
             </ul>
     </header>
@@ -220,42 +218,6 @@
                     </li>
                 </ul>
             </ul>
-            <!-- <div class="pointer__background">
-            </div>
-            <div class="pointer"></div>
-            <div class="pointer__text">
-                <div class="pointer__icon">
-                    JS
-                </div>
-                Main Page<br>
-                <br>
-                이미지가 2초마다 자동 슬라이드.<br>
-                좌우 버튼 클릭 시 슬라이드 전환.
-            </div>
-            <div class="pointer__background">
-            </div>
-            <div class="pointer"></div>
-            <div class="pointer__text">
-                <div class="pointer__icon">
-                    JS
-                </div>
-                Products Page<br>
-                <br>
-                카테고리에 필터 적용.<br>
-                목록 클릭 시 상품 선별 가능.
-            </div>
-            <div class="pointer__background">
-            </div>
-            <div class="pointer"></div>
-            <div class="pointer__text">
-                <div class="pointer__icon">
-                    JS
-                </div>
-                Cart Page<br>
-                <br>
-                상품 제거 시 총계 변화.<br>
-                결제 버튼 클릭 시 카트 초기화.
-            </div> -->
         </section>
         <section class="store__mobile__section">
         </section>
@@ -302,7 +264,9 @@
     </main>
     <footer>
         <section class="footer__section">
-
+        </section>
+        <section class="copyright__section">
+            <span>&copy; 2022 Kim Yeeun, All Rights Reserved</span>
         </section>
     </footer>
     <script>
@@ -320,21 +284,21 @@
             chromeSection.scrollIntoView({ behavior: "smooth", block: "center" });
         });
 
-const homeButton = document.querySelector("#home__button");
-const profileButton = document.querySelector("#profile__button");
-const worksButton = document.querySelector("#works__button");
-const homeSection = document.querySelector(".home__section");
-const profileSection = document.querySelector(".profile__section");
-const worksSection = document.querySelector(".works__section");
+        const homeButton = document.querySelector("#home__button");
+        const profileButton = document.querySelector("#profile__button");
+        const worksButton = document.querySelector("#works__button");
+        const homeSection = document.querySelector(".home__section");
+        const profileSection = document.querySelector(".profile__section");
+        const worksSection = document.querySelector(".works__section");
 
-     homeButton.addEventListener("click", () => {
+        homeButton.addEventListener("click", () => {
             homeSection.scrollIntoView({ behavior: "smooth", block: "center" });
         });
 
-             profileButton.addEventListener("click", () => {
+        profileButton.addEventListener("click", () => {
             profileSection.scrollIntoView({ behavior: "smooth", block: "center" });
         });
-             worksButton.addEventListener("click", () => {
+        worksButton.addEventListener("click", () => {
             worksSection.scrollIntoView({ behavior: "smooth", block: "center" });
         });
 
